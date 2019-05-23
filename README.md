@@ -1,1 +1,1 @@
-# ASS_Katawa-Shoujo
+# A.S.S.: Katawa Shoujo
