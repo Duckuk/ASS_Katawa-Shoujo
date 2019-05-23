@@ -199,18 +199,5 @@ return
 	ExitApp
 return
 
-p::
-	WinGetPos, , , winWidth, winHeight, A
-	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *41 .\ASS_KS-resources\act1_cafetalk.png 
-		if (ErrorLevel = 0) {
-			MsgBox, Done
-			break
-		} else {
-			ToolTip, 50
-		}
-	}
-return
-
 
 
