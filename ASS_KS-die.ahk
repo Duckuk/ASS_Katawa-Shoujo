@@ -208,7 +208,7 @@ return
 		}
 	}
 	
-	;'DEATH' ENDING DONE
+	;You are dead, not big surprise
 	timerSplit()
 
 	ExitApp
