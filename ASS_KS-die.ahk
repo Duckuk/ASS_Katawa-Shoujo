@@ -28,7 +28,7 @@ return
 	;Run 'Katawa Shoujo.exe'
 	Run, %exePath%
 	
-	;Wait for DDLC window to exist
+	;Wait for window to exist
 	Loop {
 		if WinExist("ahk_exe Katawa Shoujo.exe") {
 			break
@@ -62,9 +62,12 @@ return
 	timerSplit()
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"Would you like to introduce yourself to the class?"
 	;Why?
 	;Yeah, of course.
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_introduce_dialogue.png 
 		if (ErrorLevel = 0) {
@@ -75,10 +78,13 @@ return
 	Send, {Down}{Enter}
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"Hmm, I wonder..."
 	;I think I got everything I need to know
 	;Ask about the library.
 	;Ask about Shizune's deafness.
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_cafetalk_dialogue.png 
 		if (ErrorLevel = 0) {
@@ -87,14 +93,14 @@ return
 		}
 	}
 	Send, {Down}{Enter}
-	;MouseMove, FoundX, FoundY
-	;Click
-	;MouseMove, 40, 700
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"She says you have no chance if you keep playing like this, no you won't~!"
 	;She has a point. Attack aggressively!
 	;It's a trap, it's smarter to play defensively here.
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_risk_dialogue.png 
 		if (ErrorLevel = 0) {
@@ -105,9 +111,12 @@ return
 	Send, {Down}{Enter}
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"It takes too many seconds to collect myself and remember what I walked up to her for."
 	;Hi! I'm new here. Hisao Nikai. We're in the same class.
 	;I'm sorry, I didn't mean to startle you.
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_hanako-encounter_dialogue.png 
 		if (ErrorLevel = 0) {
@@ -118,9 +127,12 @@ return
 	Send, {Down}{Enter}
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"I guess it could go either way."
 	;She was cute.
 	;She wasn't cute.   <<<
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *21 .\ASS_KS-resources\act1_cute.png 
 		if (ErrorLevel = 0) {
@@ -133,9 +145,12 @@ return
 	MouseMove, 40, 700
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"Can you promise me to be more serious about this from now on?"
 	;Maybe.   <<<
 	;Yes.
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *21 .\ASS_KS-resources\act1_exercise.png 
 		if (ErrorLevel = 0) {
@@ -148,9 +163,12 @@ return
 	MouseMove, 40, 700
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"I don't understand why Shizune is suddenly getting mad at me."
 	;Don't drag me into this! I've done my part!
 	;Hey, come on. Cut me and Lilly some slack...
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_lilly-shizune-fight_dialogue.png 
 		if (ErrorLevel = 0) {
@@ -161,9 +179,12 @@ return
 	Send, {Down}{Enter}
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
 	;"Lilly noticed it all too quickly..."
 	;I don't really want to talk about it. <<<
 	;Sorry, I'm not in very good condition.
+	
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *21 .\ASS_KS-resources\act1_condition.png 
 		if (ErrorLevel = 0) {
@@ -176,6 +197,9 @@ return
 	MouseMove, 970, 725
 	
 	SetTimer, ctrlClick, 30
+	
+	;============================================================================
+	;Check for credits
 	Loop {
 		PixelSearch, xColour, yColour, 183, 697, 183, 697, 0x77858F, 0, Fast
 		if (ErrorLevel = 0) {
