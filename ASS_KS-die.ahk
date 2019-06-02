@@ -1,4 +1,4 @@
-﻿#include ASS_KS-core.ahk
+﻿#include .\ASS_KS-resources\ASS_KS-core.ahk
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 #Warn  	; Enable warnings to assist with detecting common errors.
 #SingleInstance, Force
