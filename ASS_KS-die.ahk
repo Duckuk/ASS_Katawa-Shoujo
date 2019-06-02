@@ -48,7 +48,9 @@ return
 	
 	Send, {Down 2}{Enter}
 	Sleep, 550
-	Send, {Down}{Enter}
+	Send, {Up}{Enter}
+	Sleep, 525
+	Send, {Down 2}{Enter}
 	Sleep, 525
 	Click, 491, 392
 	Click, 258, 426
