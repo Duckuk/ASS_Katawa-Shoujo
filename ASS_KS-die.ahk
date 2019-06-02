@@ -71,7 +71,7 @@ return
 	;Yeah, of course.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_introduce_dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_introduce\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -88,7 +88,7 @@ return
 	;Ask about Shizune's deafness.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_cafetalk_dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_cafetalk\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -104,7 +104,7 @@ return
 	;It's a trap, it's smarter to play defensively here.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_risk_dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_risk\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -120,7 +120,7 @@ return
 	;I'm sorry, I didn't mean to startle you.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_hanako-encounter_dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_hanako-encounter\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -133,28 +133,57 @@ return
 	;============================================================================
 	;"I guess it could go either way."
 	;She was cute.
-	;She wasn't cute.   <<<
+	;She wasn't cute.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *21 .\ASS_KS-resources\act1_cute.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_cute\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
 		}
 	}
-	MouseMove, FoundX, FoundY
-	Click
-	MouseMove, 40, 700
+	Send, {Down}{Enter}
 	
 	SetTimer, ctrlClick, 30
 	
 	;============================================================================
+	;"What to do..."
+	;Read my book.   <<<
+	;Wait for Shizune and Misha to come to a decision. (Not guaranteed to appear)
+	;Talk to Hanako. (Not guaranteed to appear)
+	;OR
 	;"Can you promise me to be more serious about this from now on?"
 	;Maybe.   <<<
 	;Yes.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *21 .\ASS_KS-resources\act1_exercise.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_shizune-lilly-gate\book.png 
+		if (ErrorLevel = 0) {
+			done := false
+			SetTimer, ctrlClick, Off
+			break
+		} else if (ErrorLevel = 1) {
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_exercise\no.png
+			if (ErrorLevel = 0) {
+				done := true
+				SetTimer, ctrlClick, Off
+				break
+			}
+		}
+	}
+	MouseMove, FoundX, FoundY
+	Click
+	MouseMove, 40, 700
+	
+	SetTimer, ctrlClick, 30
+	
+	if (!done) {
+	;============================================================================
+	;"Can you promise me to be more serious about this from now on?"
+	;Maybe.   <<<
+	;Yes.
+	Loop {
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_exercise\no.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -165,14 +194,14 @@ return
 	MouseMove, 40, 700
 	
 	SetTimer, ctrlClick, 30
-	
+	}
 	;============================================================================
 	;"I don't understand why Shizune is suddenly getting mad at me."
 	;Don't drag me into this! I've done my part!
 	;Hey, come on. Cut me and Lilly some slack...
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, .\ASS_KS-resources\act1_lilly-shizune-fight_dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_shizune-lilly-split\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -184,11 +213,11 @@ return
 	
 	;============================================================================
 	;"Lilly noticed it all too quickly..."
-	;I don't really want to talk about it. <<<
+	;I don't really want to talk about it.   <<<
 	;Sorry, I'm not in very good condition.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 0, winWidth, winHeight, *21 .\ASS_KS-resources\act1_condition.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_condition\dont-talk.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -221,9 +250,6 @@ return
 return
 
 ^[::
-	Send, {Ctrl down}
+	Send, {Ctrl up}
 	ExitApp
 return
-
-
-
