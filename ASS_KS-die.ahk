@@ -71,7 +71,7 @@ return
 	;Yeah, of course.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_introduce\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_0introduce\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -88,7 +88,7 @@ return
 	;Ask about Shizune's deafness.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_cafetalk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_1cafetalk\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -104,7 +104,7 @@ return
 	;It's a trap, it's smarter to play defensively here.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_risk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_2risk\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -120,7 +120,7 @@ return
 	;I'm sorry, I didn't mean to startle you.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_hanako-encounter\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_3hanako-encounter\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -136,7 +136,7 @@ return
 	;She wasn't cute.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_cute\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_4cute\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -157,13 +157,13 @@ return
 	;Yes.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_shizune-lilly-gate\book.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_5shizune-lilly-gate\book.png 
 		if (ErrorLevel = 0) {
 			done := false
 			SetTimer, ctrlClick, Off
 			break
 		} else if (ErrorLevel = 1) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_exercise\no.png
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_6exercise\no.png
 			if (ErrorLevel = 0) {
 				done := true
 				SetTimer, ctrlClick, Off
@@ -183,7 +183,7 @@ return
 	;Maybe.   <<<
 	;Yes.
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_exercise\no.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_6exercise\no.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -201,7 +201,7 @@ return
 	;Hey, come on. Cut me and Lilly some slack...
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_shizune-lilly-split\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1_7shizune-lilly-split\dialogue.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
@@ -217,7 +217,7 @@ return
 	;Sorry, I'm not in very good condition.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_condition\dont-talk.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1_9condition\dont-talk.png 
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
 			break
