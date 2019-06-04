@@ -260,7 +260,10 @@ return
 	}
 	Sleep, 30
 	MouseMove, FoundX, FoundY
-	Click, 2
+	Loop, 6 {
+		Click
+		Sleep, 5
+	}
 	MouseMove, 40, 700
 	Sleep, 30
 	loadGame(1)
@@ -331,30 +334,11 @@ return
 		}
 	}
 	Send, {Down}{Enter}
-	
-	MouseMove, 970, 725
-	SetTimer, ctrlClick, 5
-	
-	;============================================================================
-	;Check for main menu
-	Loop {
-		PixelSearch, xColour, yColour, 183, 697, 183, 697, 0x77858F, 0, Fast
-		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
-		}
+	Loop, 119 {
+		Click
+		Sleep, 5
 	}
-	
-	Send, {Down 2}{Enter}
-	Send, {Left}{Down}
-	Loop {
-		PixelSearch, xColour, yColour, 384, 593, 384, 593, 0xCFEDFC, 0, Fast
-		if (ErrorLevel = 0) {
-			break
-		}
-	}
-	Sleep, 150
-	Send, {Enter}
+	loadGame(2)
 	
 	;============================================================================
 	;""
@@ -397,10 +381,10 @@ return
 	Click
 	MouseMove, 40, 700
 	
-	SetTimer, ctrlClick, 5
-	Sleep, 500
-	SetTimer, ctrlClick, Off
-	Sleep, 150
+	Loop, 10 {
+		Click
+		Sleep, 5
+	}
 	
 	loadGame(3)
 	Loop {
