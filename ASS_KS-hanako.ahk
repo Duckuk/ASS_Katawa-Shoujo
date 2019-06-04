@@ -316,7 +316,10 @@ return
 		}
 	}
 	MouseMove, FoundX, FoundY
-	Click
+	Loop, 6 {
+		Click
+		Sleep, 5
+	}
 	MouseMove, 40, 700
 	
 	SetTimer, ctrlClick, 5
