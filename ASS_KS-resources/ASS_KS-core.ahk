@@ -17,17 +17,21 @@ saveGame()
 	global xColour
 	global yColour
 	Send, {Escape}
-	Sleep, 550
-	Send, {Down 7}{Enter}
-	Send, {Down 6}
+	Sleep, 700
+	MouseMove, 499, 437
+	Click
+	Sleep, 30
+	Send, {Down 10}
 	Loop {
 		PixelSearch, xColour, yColour, 219, 584, 219, 584, 0xD0EEFD, 5, Fast
 		if (ErrorLevel = 0) {
 			break
 		}
 	}
+	Sleep, 30
 	Send, {Enter}
 	Send, {Escape}
+	Sleep, 700
 }
 
 loadGame(slot) {
@@ -38,8 +42,10 @@ loadGame(slot) {
 		ExitApp
 	}
 	Send, {Escape}
-	Sleep, 550
-	Send, {Down 8}{Enter}
+	Sleep, 700
+	MouseMove, 499, 478
+	Click
+	Sleep, 30
 	Send, {Down %slot%}
 	Loop {
 		PixelSearch, xColour, yColour, 219, 584, 219, 584, 0xD0EEFD, 5, Fast
@@ -47,8 +53,11 @@ loadGame(slot) {
 			break
 		}
 	}
+	Sleep, 30
 	Send, {Enter}
-	Send, {Right}
 	Sleep, 525
-	Send, {Enter}
+	MouseMove, 439, 433
+	Click
+	MouseMove, 40, 700
+	Sleep, 700
 }
