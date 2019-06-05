@@ -63,7 +63,7 @@ return
 	;START OF ACT 1
 	timerSplit()
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"Would you like to introduce yourself to the class?"
@@ -79,7 +79,7 @@ return
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"Hmm, I wonder..."
@@ -96,7 +96,7 @@ return
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"She says you have no chance if you keep playing like this, no you won't~!"
@@ -112,7 +112,7 @@ return
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"It takes too many seconds to collect myself and remember what I walked up to her for."
@@ -128,7 +128,7 @@ return
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"I guess it could go either way."
@@ -144,7 +144,7 @@ return
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"What to do..."
@@ -175,7 +175,7 @@ return
 	Click
 	MouseMove, 40, 700
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	if (!done) {
 	;============================================================================
@@ -193,7 +193,7 @@ return
 	Click
 	MouseMove, 40, 700
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	}
 	;============================================================================
 	;"I don't understand why Shizune is suddenly getting mad at me."
@@ -209,7 +209,7 @@ return
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;"Lilly noticed it all too quickly..."
@@ -227,7 +227,7 @@ return
 	Click
 	MouseMove, 970, 725
 	
-	SetTimer, ctrlClick, 30
+	SetTimer, ctrlClick, 5
 	
 	;============================================================================
 	;Check for main menu
