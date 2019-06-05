@@ -5,6 +5,10 @@ SetWorkingDir %A_ScriptDir%
 CoordMode, Pixel, Client
 CoordMode, Mouse, Client
 
+pressCtrl() {
+	Send, {Ctrl}
+}
+
 timerSplit() {
 	global
 	if (timer) {
@@ -16,22 +20,19 @@ saveGame()
 {
 	global xColour
 	global yColour
+	setTimer, pressCtrl, 5
 	Send, {Escape}
-	Sleep, 700
+	Sleep, 10
 	MouseMove, 499, 437
 	Click
-	Sleep, 30
+	Sleep, 10
 	Send, {Down 10}
-	Loop {
-		PixelSearch, xColour, yColour, 219, 584, 219, 584, 0xD0EEFD, 5, Fast
-		if (ErrorLevel = 0) {
-			break
-		}
-	}
-	Sleep, 30
+	Sleep, 10
 	Send, {Enter}
 	Send, {Escape}
-	Sleep, 700
+	Sleep, 10
+	MouseMove, 40, 700
+	setTimer, pressCtrl, Off
 }
 
 loadGame(slot) {
@@ -41,23 +42,19 @@ loadGame(slot) {
 		MsgBox, Slot '%slot%' is invalid.
 		ExitApp
 	}
+	setTimer, pressCtrl, 5
 	Send, {Escape}
-	Sleep, 700
+	Sleep, 10
 	MouseMove, 499, 478
 	Click
-	Sleep, 30
+	Sleep, 10
 	Send, {Down %slot%}
-	Loop {
-		PixelSearch, xColour, yColour, 219, 584, 219, 584, 0xD0EEFD, 5, Fast
-		if (ErrorLevel = 0) {
-			break
-		}
-	}
-	Sleep, 30
+	Sleep, 10
 	Send, {Enter}
-	Sleep, 525
+	Sleep, 10
 	MouseMove, 439, 433
 	Click
+	Sleep, 10
 	MouseMove, 40, 700
-	Sleep, 700
+	setTimer, pressCtrl, Off
 }
