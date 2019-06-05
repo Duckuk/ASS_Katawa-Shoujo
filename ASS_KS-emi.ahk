@@ -155,14 +155,14 @@ return
 	;Yes.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\book.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			done := false
-			break
-		} else {
-			PixelSearch, xColour, yColour, 685, 377, 685, 377, 0xD1F0FE, 25, Fast
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\book.png 
 			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				done := false
+				break
+			} else {
 				ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\yes.png 
 				if (ErrorLevel = 0) {
 					SetTimer, ctrlClick, Off
@@ -184,10 +184,13 @@ return
 	;Maybe.
 	;Yes.   <<<
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\yes.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\yes.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -203,10 +206,13 @@ return
 	;Hey, come on. Cut me and Lilly some slack...
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\7shizune-lilly-split\dialogue.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\7shizune-lilly-split\dialogue.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	Send, {Down}{Enter}
@@ -219,10 +225,13 @@ return
 	;Take it easy.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\8pushself\go-for-it.png
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\8pushself\go-for-it.png
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -231,12 +240,14 @@ return
 	
 	SetTimer, ctrlClick, 5
 	
+	;START OF EMI ROUTE
 	;============================================================================
 	;"Still, I feel like I should at least offer to run with her..."
 	;Keep quiet.
 	;Offer to run with Emi.
 	
 	Loop {
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\emi-route\0run\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, ctrlClick, Off
@@ -269,10 +280,13 @@ return
 	;No, I have other things to worry about.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\emi-route\2mutou-talk\talk.png
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\emi-route\2mutou-talk\talk.png
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -328,10 +342,13 @@ return
 	;Give in and let Misha know   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\emi-route\5misha\spill-beans.png
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\emi-route\5misha\spill-beans.png
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY

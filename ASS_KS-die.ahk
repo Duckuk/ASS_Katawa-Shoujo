@@ -162,12 +162,15 @@ return
 			done := false
 			SetTimer, ctrlClick, Off
 			break
-		} else if (ErrorLevel = 1) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
+		} else {
+			PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 			if (ErrorLevel = 0) {
-				done := true
-				SetTimer, ctrlClick, Off
-				break
+				ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
+				if (ErrorLevel = 0) {
+					done := true
+					SetTimer, ctrlClick, Off
+					break
+				}
 			}
 		}
 	}
@@ -183,10 +186,13 @@ return
 	;Maybe.   <<<
 	;Yes.
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -217,10 +223,13 @@ return
 	;Sorry, I'm not in very good condition.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\dont-talk.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\dont-talk.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
