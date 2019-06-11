@@ -46,18 +46,17 @@ return
 		WinActivate, ahk_exe Katawa Shoujo.exe
 	}
 	
+	Send, {Ctrl down}
 	Send, {Down 2}{Enter}
-	Sleep, 550
 	Send, {Up}{Enter}
-	Sleep, 525
 	Send, {Down 2}{Enter}
-	Sleep, 525
 	Click, 491, 392
 	Click, 258, 426
 	MouseMove, 40, 700
+	Send, {Ctrl up}
 	Send, {Escape}
+	Send, {Ctrl}
 	Send, {Down}
-	Sleep, 550
 	Send, {Enter}
 	
 	;START OF ACT 1
