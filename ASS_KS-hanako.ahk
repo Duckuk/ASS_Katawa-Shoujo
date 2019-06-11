@@ -118,10 +118,13 @@ return
 	;I'm sorry, I didn't mean to startle you.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\3hanako-encounter\apologize.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\3hanako-encounter\apologize.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -136,10 +139,13 @@ return
 	;She wasn't cute.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\4cute\cute.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\4cute\cute.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -155,10 +161,13 @@ return
 	;Talk to Hanako.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\lilly-hanako.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\lilly-hanako.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -172,10 +181,13 @@ return
 	;Maybe.   <<<
 	;Yes.
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -190,10 +202,13 @@ return
 	;Hey, come on. Cut me and Lilly some slack...   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\7shizune-lilly-split\lilly.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\7shizune-lilly-split\lilly.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -208,10 +223,13 @@ return
 	;Sorry, I'm not in very good condition.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\spill-beans.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\spill-beans.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -226,10 +244,13 @@ return
 	;Go for a walk into town.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\10lilly-hanako-gate\hanako.png 
+		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			SetTimer, ctrlClick, Off
-			break
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\10lilly-hanako-gate\hanako.png 
+			if (ErrorLevel = 0) {
+				SetTimer, ctrlClick, Off
+				break
+			}
 		}
 	}
 	MouseMove, FoundX, FoundY
