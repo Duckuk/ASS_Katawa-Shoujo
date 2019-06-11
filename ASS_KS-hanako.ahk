@@ -20,7 +20,15 @@ IniRead, timer, ASS_KS-config.ini, Settings, timer, 0
 IniRead, timerKey, ASS_KS-config.ini, Settings, timerKey, Numpad1
 
 ctrlClick:
+	Click, 2
+	Send, {Ctrl}
+return
+
+ctrlClickEnd:
 	Click
+	MouseMove, 970, 705
+	Click
+	MouseMove, 970, 725
 	Send, {Ctrl}
 return
 
@@ -161,13 +169,10 @@ return
 	;Talk to Hanako.   <<<
 	
 	Loop {
-		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\lilly-hanako.png 
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\lilly-hanako.png 
-			if (ErrorLevel = 0) {
-				SetTimer, ctrlClick, Off
-				break
-			}
+			SetTimer, ctrlClick, Off
+			break
 		}
 	}
 	MouseMove, FoundX, FoundY
@@ -343,7 +348,7 @@ return
 	}
 	MouseMove, 40, 700
 	
-	SetTimer, ctrlClick, 5
+	SetTimer, ctrlClick, 10 ;'Cooling down' time
 	
 	;============================================================================
 	;"The situation got effectively turned on its head. After everything that's happened, this is the first time I find myself doubting Lilly's judgement."
@@ -422,7 +427,7 @@ return
 	Click
 	MouseMove, 970, 725
 	
-	SetTimer, ctrlClick, 5
+	SetTimer, ctrlClickEnd, 5
 	
 	;============================================================================
 	;Check for main menu

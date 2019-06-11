@@ -20,8 +20,15 @@ IniRead, timer, ASS_KS-config.ini, Settings, timer, 0
 IniRead, timerKey, ASS_KS-config.ini, Settings, timerKey, Numpad1
 
 ctrlClick:
-	Click
+	Click, 2
 	Send, {Ctrl}
+return
+
+ctrlClickEnd:
+	Click
+	MouseMove, 970, 705
+	Click
+	MouseMove, 970, 725
 return
 
 ]::
@@ -158,16 +165,16 @@ return
 	Loop {
 		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\book.png 
 		if (ErrorLevel = 0) {
-			done := false
 			SetTimer, ctrlClick, Off
+			done := false
 			break
 		} else {
 			PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 			if (ErrorLevel = 0) {
 				ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
 				if (ErrorLevel = 0) {
-					done := true
 					SetTimer, ctrlClick, Off
+					done := true
 					break
 				}
 			}
@@ -235,7 +242,7 @@ return
 	Click
 	MouseMove, 970, 725
 	
-	SetTimer, ctrlClick, 5
+	SetTimer, ctrlClickEnd, 5
 	
 	;============================================================================
 	;Check for main menu
