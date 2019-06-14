@@ -321,11 +321,3 @@ return
 	Send, {Ctrl up}
 	ExitApp
 return
-
-p::
-	Send, {Ctrl down}
-	Send, {Down 2}{Enter}
-	Send, {Ctrl up}
-	Send, {Left}{Enter}
-	Send, {Ctrl}
-return
