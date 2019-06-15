@@ -35,7 +35,7 @@ saveGame()
 	setTimer, pressCtrl, Off
 }
 
-loadGame(slot) {
+loadGame(slot, scrollNum:=0) {
 	global xColour
 	global yColour
 	if (slot > 5) {
@@ -48,6 +48,17 @@ loadGame(slot) {
 	MouseMove, 499, 478
 	Click
 	Sleep, 10
+	if (scrollNum) {
+		Loop, 20 {
+			Send, {WheelDown}
+			Sleep, 1
+		}
+		Loop, %scrollNum% {
+			Send, {WheelUp}
+			Sleep, 1
+		}
+		Sleep, 10
+	}
 	Send, {Down %slot%}
 	Sleep, 10
 	Send, {Enter}
