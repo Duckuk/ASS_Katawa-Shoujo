@@ -596,21 +596,3 @@ return
 	Send, {Ctrl up}
 	ExitApp
 return
-
-p::
-	WinGetPos, , , winWidth, winHeight, A
-	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\explain.png 
-		if (ErrorLevel = 0) {
-			break
-		}
-		ToolTip, %ErrorLevel%
-	}
-	MouseMove, FoundX, FoundY
-	Click, 5
-	MouseMove, 40, 700
-	
-	Sleep, 30
-	
-	loadGame(2)
-return
