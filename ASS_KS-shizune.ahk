@@ -82,7 +82,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\0introduce\yeah.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\0introduce\yeah.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -102,7 +102,7 @@ return
 	;Ask about Shizune's deafness.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\1cafetalk\nothing.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\1cafetalk\nothing.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -120,7 +120,7 @@ return
 	;It's a trap, it's smarter to play defensively here.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\2risk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\2risk\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -136,7 +136,7 @@ return
 	;I'm sorry, I didn't mean to startle you.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\3hanako-encounter\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\3hanako-encounter\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -152,7 +152,7 @@ return
 	;She wasn't cute.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\4cute\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\4cute\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -169,7 +169,7 @@ return
 	;Talk to Hanako. (Not guaranteed to appear)
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\shizune.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\shizune.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -188,7 +188,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -209,7 +209,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\7shizune-lilly-split\shizune.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\7shizune-lilly-split\shizune.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -230,7 +230,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9mishi-medication\dodge-the-subject.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9mishi-medication\dodge-the-subject.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -251,7 +251,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\shizune-route\0misha-comfort\comfort.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\shizune-route\0misha-comfort\comfort.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -287,7 +287,7 @@ return
 	;Refuse.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\shizune-route\0misha-comfort\refuse.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\shizune-route\0misha-comfort\refuse.png
 		if (ErrorLevel = 0) {
 			break
 		}

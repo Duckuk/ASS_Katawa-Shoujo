@@ -84,7 +84,7 @@ return
 	;Yeah, of course.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\0introduce\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\0introduce\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -101,7 +101,7 @@ return
 	;Ask about Shizune's deafness.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\1cafetalk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\1cafetalk\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -117,7 +117,7 @@ return
 	;It's a trap, it's smarter to play defensively here.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\2risk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\2risk\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -133,7 +133,7 @@ return
 	;I'm sorry, I didn't mean to startle you.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\3hanako-encounter\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\3hanako-encounter\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -149,7 +149,7 @@ return
 	;She wasn't cute.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\4cute\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\4cute\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -170,7 +170,7 @@ return
 	;Yes.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\book.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\book.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			done := false
@@ -178,7 +178,7 @@ return
 		} else {
 			PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 			if (ErrorLevel = 0) {
-				ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+				ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
 				if (ErrorLevel = 0) {
 					SetTimer, clickTimer, Off
 					done := true
@@ -201,7 +201,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -221,7 +221,7 @@ return
 	;Hey, come on. Cut me and Lilly some slack...
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\7shizune-lilly-split\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\7shizune-lilly-split\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -239,7 +239,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\spill-beans.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\spill-beans.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -260,7 +260,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\10rin-gate\interested-in-art.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\10rin-gate\interested-in-art.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -282,7 +282,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\0drawing\amazing.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\0drawing\amazing.png
 			if (ErrorLevel = 0) {
 				SetTimer, singleClickTimer, Off
 				break
@@ -303,7 +303,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\1alive-school\refreshing.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\1alive-school\refreshing.png
 			if (ErrorLevel = 0) {
 				SetTimer, singleClickTimer, Off
 				break
@@ -324,7 +324,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\2change\rin.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\2change\rin.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -346,7 +346,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 825, 354, 825, 354, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\3art-mueseum\big-hit-1.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\3art-mueseum\big-hit-1.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -376,7 +376,7 @@ return
 	;What about Emi?
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\4friends\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\4friends\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, singleClickTimer, Off
 			break
@@ -392,7 +392,7 @@ return
 	;I can't leave her alone either.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\5distance1\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\5distance1\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -407,7 +407,7 @@ return
 	;It isn't like you at all to hesitate like this.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\3art-mueseum\hesitate-1.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\3art-mueseum\hesitate-1.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -428,7 +428,7 @@ return
 	;What about Emi?
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\4friends\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\4friends\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, singleClickTimer, Off
 			break
@@ -444,7 +444,7 @@ return
 	;I want to support her.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\5distance2\understand.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\5distance2\understand.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -462,7 +462,7 @@ return
 	;Why did you turn away from being an artist?
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\6nomiya-talk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\6nomiya-talk\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, singleClickTimer, Off
 			break
@@ -478,7 +478,7 @@ return
 	;Then explain.   <<<1
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\7understand\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\7understand\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -487,11 +487,11 @@ return
 	saveGame()
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\explain.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\explain.png
 		if (ErrorLevel = 0) {
 			break
 		}
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\explain-2.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\explain-2.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -505,11 +505,11 @@ return
 	loadGame(2)
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\understand.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\understand.png
 		if (ErrorLevel = 0) {
 			break
 		}
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\understand-2.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\7understand\understand-2.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -526,7 +526,7 @@ return
 	;But aren't you happy people are interested in your paintings?   <<<1
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\8questions\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\8questions\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -535,7 +535,7 @@ return
 	saveGame()
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\8questions\interested-in-paintings.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\8questions\interested-in-paintings.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -563,7 +563,7 @@ return
 	loadGame(3)
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\8questions\then-what.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\8questions\then-what.png
 		if (ErrorLevel = 0) {
 			break
 		}

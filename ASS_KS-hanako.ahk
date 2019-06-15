@@ -81,7 +81,7 @@ return
 	;Yeah, of course.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\0introduce\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\0introduce\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -98,7 +98,7 @@ return
 	;Ask about Shizune's deafness.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\1cafetalk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\1cafetalk\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -114,7 +114,7 @@ return
 	;It's a trap, it's smarter to play defensively here.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\2risk\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\act1\2risk\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -132,7 +132,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\3hanako-encounter\apologize.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\3hanako-encounter\apologize.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -153,7 +153,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\4cute\cute.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\4cute\cute.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -173,7 +173,7 @@ return
 	;Talk to Hanako.   <<<
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\lilly-hanako.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\5shizune-lilly-gate\lilly-hanako.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -192,7 +192,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\6exercise\no.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -213,7 +213,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\7shizune-lilly-split\lilly.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\7shizune-lilly-split\lilly.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -234,7 +234,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\spill-beans.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\9condition\spill-beans.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -255,7 +255,7 @@ return
 	Loop {
 		PixelSearch, xColour, yColour, 785, 377, 785, 377, 0xD1F0FE, 25, Fast
 		if (ErrorLevel = 0) {
-			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\10lilly-hanako-gate\hanako.png 
+			ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\act1\10lilly-hanako-gate\hanako.png
 			if (ErrorLevel = 0) {
 				SetTimer, clickTimer, Off
 				break
@@ -316,7 +316,7 @@ return
 	;Deny it.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\hanako-route\1miki-encounter\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\hanako-route\1miki-encounter\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -340,7 +340,7 @@ return
 	}
 	saveGame()
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\2hanako-tired\call-a-day.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\2hanako-tired\call-a-day.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -360,7 +360,7 @@ return
 	;Trust my own judgement.
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\hanako-route\3lilly-phone\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\hanako-route\3lilly-phone\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -379,7 +379,7 @@ return
 	;How about we call it a day?
 
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\2hanako-tired\go-to-city.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\2hanako-tired\go-to-city.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -396,7 +396,7 @@ return
 	;Trust my own judgement.   <<<1
 	
 	Loop {
-		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\hanako-route\3lilly-phone\dialogue.png 
+		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\hanako-route\3lilly-phone\dialogue.png
 		if (ErrorLevel = 0) {
 			SetTimer, clickTimer, Off
 			break
@@ -404,7 +404,7 @@ return
 	}
 	saveGame()
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\3lilly-phone\trust-self.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\3lilly-phone\trust-self.png
 		if (ErrorLevel = 0) {
 			break
 		}
@@ -421,7 +421,7 @@ return
 	
 	loadGame(3)
 	Loop {
-		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\3lilly-phone\agree-lilly.png 
+		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\hanako-route\3lilly-phone\agree-lilly.png
 		if (ErrorLevel = 0) {
 			break
 		}
