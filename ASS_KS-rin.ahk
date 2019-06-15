@@ -546,7 +546,7 @@ return
 	
 	Loop, 550 {
 		Click
-		Sleep, 20
+		Sleep, 25
 	}
 	
 	Loop {
@@ -558,6 +558,7 @@ return
 			}
 		}
 		Click
+		Sleep, 25
 	}
 	loadGame(3)
 	
