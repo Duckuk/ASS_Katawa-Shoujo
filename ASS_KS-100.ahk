@@ -933,7 +933,7 @@ rinRoute() {
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, clickTimer, 5
+	SetTimer, singleClickTimer, 5
 	
 	;============================================================================
 	;"I can't make sense of my own thoughts."
@@ -943,7 +943,7 @@ rinRoute() {
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\rin-route\5distance1\dialogue.png
 		if (ErrorLevel = 0) {
-			SetTimer, clickTimer, Off
+			SetTimer, singleClickTimer, Off
 			break
 		}
 	}
@@ -986,7 +986,7 @@ rinRoute() {
 	}
 	Send, {Down}{Enter}
 	
-	SetTimer, clickTimer, 5
+	SetTimer, singleClickTimer, 5
 	
 	;============================================================================
 	;"What am I, for her?"
@@ -996,7 +996,7 @@ rinRoute() {
 	Loop {
 		ImageSearch, FoundX, FoundY, 85, 265, 860, 500, *25 .\ASS_KS-resources\rin-route\5distance2\understand.png
 		if (ErrorLevel = 0) {
-			SetTimer, clickTimer, Off
+			SetTimer, singleClickTimer, Off
 			break
 		}
 	}
@@ -1181,7 +1181,7 @@ lillyRoute() {
 	Click
 	MouseMove, 40, 700
 	
-	SetTimer, clickTimer, 5
+	SetTimer, singleClickTimer, 5
 	
 	;============================================================================
 	;"I think he's hyperventilating. Passing out for a little while would probably make him more relaxed than he normally is."
@@ -1191,7 +1191,7 @@ lillyRoute() {
 	Loop {
 		ImageSearch, FoundX, FoundY, 0, 600, winWidth, winHeight, .\ASS_KS-resources\lilly-route\1bet\dialogue.png
 		if (ErrorLevel = 0) {
-			SetTimer, clickTimer, Off
+			SetTimer, singleClickTimer, Off
 			break
 		}
 	}
